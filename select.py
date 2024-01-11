@@ -1,7 +1,7 @@
 from typing import List
 import random
 
-def insert_sort(list: List) -> List:
+def select_sort(list: List) -> List:
     result = list.copy()
 
     for i in range(0, len(result)):
@@ -21,5 +21,5 @@ l = [
 print("target", l)
 random.shuffle(l)
 print("input", l)
-l = insert_sort(l)
+l = select_sort(l)
 print("result", l)
